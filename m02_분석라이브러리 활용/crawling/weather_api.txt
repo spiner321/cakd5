@@ -1,0 +1,18 @@
+#### 아래사항에 유의하여 OpenWeatherMap 날씨정보를 웹 API로 가져와서 출력하세요
+* https://openweathermap.org/api 사이트에서 Current Weather data에 대한 API doc 내용을 파악
+* 개발자 등록을 하고 API 키 발급 받음(https://home.openweathermap.org/users/sign_up)
+* New Account 등록 후 API Keys라는 탭에서 API Key 확인 가능
+* 기본적으로 유료 사이트이지만 현재 날씨, 5일까지의 날씨는 무료로 사용할 수 있음(단 1분에 60번만 호출 가능)
+* 서울, 토쿄, 뉴욕의 날씨를 가져오는 프로그램 작성(text로 가져와서 json으로 변환하여 일차 출력)
+  - cities = ["Seoul,KR", "Tokyo,JP", "New York,US"]
+  - 가져올 정보 : 도시별 날씨(description), 최저 기온(temp_min), 최고 기온(temp_max), 습도(humidity), 기압(pressure), 풍속(speed)
+  - 기온 데이터는 켈빈 온도로 되어 있으며 섭씨 온도로 변환해서 출력
+* json 포멧으로 출력 데이터를 아래와 같이 가독력 있게 출력(소수점 2번째에서 반올림 처리)
+
++ 도시 = Seoul
+| 날씨 = broken clouds
+| 최저 기온 = -1.0 2
+| 최고 기온 = 2.0 2
+| 습도 = 74
+| 기압 = 1023
+| 풍속 = 0.5

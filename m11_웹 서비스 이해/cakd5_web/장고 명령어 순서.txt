@@ -1,0 +1,11 @@
+# 아래 코드를 파일 생성할 폴더에서 터미널로 실행
+# vscode 사용
+
+activate cakd5
+django-admin startproject cakd_dj
+cd cakd_dj
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py startapp blog
+python manage.py startapp single_pages
+python manage.py runserver

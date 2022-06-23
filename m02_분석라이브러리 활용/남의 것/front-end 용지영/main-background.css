@@ -1,0 +1,19 @@
+.main-background{
+    width : 100%;
+    height : 740px;
+    background-image: url(./dataset/space.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.greeting-quote{
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.info{
+    padding-top: 500px;
+    font-size: 20px;
+    text-align: center; 
+}

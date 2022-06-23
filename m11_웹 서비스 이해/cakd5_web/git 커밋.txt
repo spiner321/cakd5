@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "Project 생성"
+
+git push
